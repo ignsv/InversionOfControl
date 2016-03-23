@@ -15,14 +15,19 @@ context.global = context;
 var sandbox = vm.createContext(context);
 
 // Читаем исходный код приложения из файла
-var fileName = './application.js';
+var fileName = './'+process.argv[2];
 fs.readFile(fileName, function(err, src) {
   // Тут нужно обработать ошибки
-  
-  // Запускаем код приложения в песочнице
-  var script = vm.createScript(src, fileName);
-  script.runInNewContext(sandbox);
-  sandbox.module.exports(); 
-  // Забираем ссылку из sandbox.module.exports, можем ее исполнить,
-  // сохранить в кеш, вывести на экран исходный код приложения и т.д.
+  if (err){
+  	console.log("command line input issue");
+  } else{
+
+
+  		// Запускаем код приложения в песочнице
+  		var script = vm.createScript(src, fileName);
+  		script.runInNewContext(sandbox);
+  		sandbox.module.exports(); 
+  		// Забираем ссылку из sandbox.module.exports, можем ее исполнить,
+  		// сохранить в кеш, вывести на экран исходный код приложения и т.д.
+	}
 });

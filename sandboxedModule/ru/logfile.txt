@@ -7,3 +7,41 @@
 [13:48:37] ./application.js » true
 [13:48:37] ./application.js » From application exported function
 [13:48:38] ./application.js » Hello, guys. Usage setTimeout
+[14:14:03]./requiredModule is required
+[14:14:24]./requiredModule is required
+[14:20:45]./requiredModule is required
+[14:20:55]./requiredModule is required
+[14:21:22]fs is required
+[14:21:22] ./script.js » Hello command line from new script
+[14:21:22] ./script.js » From application exported function
+[14:22:16]util is required
+[14:22:16] ./application.js » From application global context
+[14:22:16] ./application.js » true
+[14:22:16] ./application.js » true
+[14:22:16] ./application.js » From application exported function
+[14:22:17] ./application.js » Hello, guys. Usage setTimeout
+[14:41:09]util is required
+[14:41:09] ./application.js » From application global context
+[14:41:09] ./application.js » true
+[14:41:09] ./application.js » true
+[14:41:10] ./application.js » Hello, guys. Usage setTimeout
+[14:42:02]util is required
+[14:42:43]util is required
+[14:42:43] ./application.js » From application global context
+[14:42:43] ./application.js » true
+[14:42:43] ./application.js » true
+[14:42:44] ./application.js » Hello, guys. Usage setTimeout
+[14:43:20]fs is required
+[14:43:20] ./script.js » Hello command line from new script
+[14:45:23]fs is required
+[14:45:49]fs is required
+[14:46:13]fs is required
+[14:46:50]fs is required
+[14:48:18]fs is required
+[14:49:03]fs is required
+[14:51:05]fs is required
+[14:51:05] ./script.js » Hello command line from new script
+[14:51:05] ./script.js » From application exported function
+[14:51:31]fs is required
+[14:51:31] ./script.js » Hello command line from new script
+[14:51:31] ./script.js » From application exported function

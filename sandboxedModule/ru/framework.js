@@ -29,11 +29,20 @@ console.log('['+date+'] '+fileName+' » '+msg);
 //write to file
 stream.write('['+date+'] '+fileName+' » '+msg+'\n');
 };
+//write this function for dodge stackoverflow
 function clone(obj) {
      var res = {};
      for (var key in obj) res[key] = obj[key];
      return res;
  }
+ //task 6. logging calls
+sandbox.require = function(moduleName){
+  var date = new Date().toLocaleTimeString();
+  stream.write('[' + date + ']' + moduleName + ' is required' + '\n');
+  return require(moduleName);
+};
+
+
 fs.readFile(fileName, function(err, src) {
   // Тут нужно обработать ошибки
   if (err){
@@ -44,8 +53,15 @@ fs.readFile(fileName, function(err, src) {
   		// Запускаем код приложения в песочнице
   		var script = vm.createScript(src, fileName);
   		script.runInNewContext(sandbox);
-  		sandbox.module.exports(); 
+  		var module =sandbox.module.exports;
+      module.firstFunction();
+
   		// Забираем ссылку из sandbox.module.exports, можем ее исполнить,
   		// сохранить в кеш, вывести на экран исходный код приложения и т.д.
+      //Task 7. Export hash from app
+      console.log('Task 7: list of exports');
+      for (var key in sandbox.module.exports) {
+        console.log(key + " " + typeof sandbox.module.exports[key]);
+      }
 	}
 });

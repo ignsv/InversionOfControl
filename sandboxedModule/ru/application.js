@@ -1,7 +1,7 @@
 // Файл содержит маленький кусочек основного модуля демонстрационного
 // прикладного приложения, загружаемого в песочницу демонстрационным
 // кусочком фреймворка. Читайте README.md в нем задания.
-var module= require('util');
+var Module= require('util');
 // Вывод из глобального контекста модуля
 console.log('From application global context');
 setTimeout( function() {console.log("Hello, guys. Usage setTimeout");}, 1000);

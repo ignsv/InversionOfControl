@@ -101,3 +101,37 @@
 [15:15:25]fs is required
 [15:15:25] ./script.js » Hello command line from new script
 [15:15:25] ./script.js » From application exported function
+[15:28:52]fs is required
+[15:28:52] ./script.js » Hello command line from new script
+[15:28:52] ./script.js » From application exported function
+[15:29:10]util is required
+[15:29:10] ./application.js » From application global context
+[15:29:10] ./application.js » true
+[15:29:10] ./application.js » true
+[15:29:10] ./application.js » Task 9: list fo everything from app global context
+[15:29:10] ./application.js » module : object
+[15:29:10] ./application.js » key : string
+[15:29:10] ./application.js » console : object
+[15:29:10] ./application.js » setTimeout : function
+[15:29:10] ./application.js » setInterval : function
+[15:29:10] ./application.js » util : object
+[15:29:10] ./application.js » global : object
+[15:29:10] ./application.js » require : function
+[15:29:10] ./application.js » From application exported function
+[15:29:11] ./application.js » Hello, guys. Usage setTimeout
+[15:29:59]util is required
+[15:29:59] ./application.js » From application global context
+[15:29:59] ./application.js » true
+[15:29:59] ./application.js » true
+[15:29:59] ./application.js » Task 9: list fo everything from app global context
+[15:29:59] ./application.js » Module : object
+[15:29:59] ./application.js » key : string
+[15:29:59] ./application.js » module : object
+[15:29:59] ./application.js » console : object
+[15:29:59] ./application.js » setTimeout : function
+[15:29:59] ./application.js » setInterval : function
+[15:29:59] ./application.js » util : object
+[15:29:59] ./application.js » global : object
+[15:29:59] ./application.js » require : function
+[15:29:59] ./application.js » From application exported function
+[15:30:00] ./application.js » Hello, guys. Usage setTimeout

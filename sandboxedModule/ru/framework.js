@@ -43,6 +43,12 @@ sandbox.require = function(moduleName){
 };
 
 
+var oldKeys = {};
+
+for (var key in sandbox.global) {
+        oldKeys[key] = sandbox.global[key];
+}
+
 fs.readFile(fileName, function(err, src) {
   // Тут нужно обработать ошибки
   if (err){
@@ -53,6 +59,30 @@ fs.readFile(fileName, function(err, src) {
   		// Запускаем код приложения в песочнице
   		var script = vm.createScript(src, fileName);
   		script.runInNewContext(sandbox);
+
+
+      console.log('Task 10: comparing keys')
+      var newKeys = {};
+      for (var key in sandbox.global) {
+          newKeys[key] = sandbox.global[key];
+      }
+      console.log('Added keys:');
+      for (var key in newKeys) {
+          if (!(key in oldKeys)) {
+               console.log(key);
+          }
+      }
+      console.log('Deleted keys:');
+       for (var key in oldKeys) {
+          if (!(key in newKeys)) {
+              console.log(key);
+          }
+      }
+
+
+
+
+
   		var module =sandbox.module.exports;
       module.firstFunction();
 

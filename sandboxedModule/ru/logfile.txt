@@ -1,0 +1,9 @@
+[13:48:16] ./script.js » Hello command line from new script
+[13:48:16] ./script.js » From application exported function
+[13:48:28] ./script.js » Hello command line from new script
+[13:48:28] ./script.js » From application exported function
+[13:48:37] ./application.js » From application global context
+[13:48:37] ./application.js » true
+[13:48:37] ./application.js » true
+[13:48:37] ./application.js » From application exported function
+[13:48:38] ./application.js » Hello, guys. Usage setTimeout

@@ -9,8 +9,11 @@ var fs = require('fs'),
     util = require('util');
 
 
+
+//stream for writing to file
+var stream=fs.createWriteStream('logfile.txt', {flags:'a'}); 
 // Создаем контекст-песочницу, которая станет глобальным контекстом приложения
-var context = { module: {}, console: console, setTimeout:setTimeout, setInterval:setInterval, util:util };
+var context = { module: {}, console: clone(console), setTimeout:setTimeout, setInterval:setInterval, util:util };
 context.global = context;
 var sandbox = vm.createContext(context);
 
@@ -19,9 +22,12 @@ var sandbox = vm.createContext(context);
 // Читаем исходный код приложения из файла
 var fileName = './'+process.argv[2];
 
-context.console.logEx = context.console.log;
+//context.console.logEx = context.console.log;
 context.console.log = function(msg) {
-console.logEx('['+new Date().toLocaleTimeString()+'] '+fileName+' » '+msg);
+  var date=new Date().toLocaleTimeString();
+console.log('['+date+'] '+fileName+' » '+msg);
+//write to file
+stream.write('['+date+'] '+fileName+' » '+msg+'\n');
 };
 function clone(obj) {
      var res = {};

@@ -63,5 +63,9 @@ fs.readFile(fileName, function(err, src) {
       for (var key in sandbox.module.exports) {
         console.log(key + " " + typeof sandbox.module.exports[key]);
       }
+      //task 8 print parameters of function
+      console.log(sandbox.module.exports.secondFunction.toString());
+      console.log('Parameter count for function "printString": ' +
+        sandbox.module.exports.secondFunction.toString().replace(/.+\(/, '').replace(/\)[^]+/, '').split(/, */).length);      
 	}
 });

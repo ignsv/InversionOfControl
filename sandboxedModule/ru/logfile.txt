@@ -45,3 +45,9 @@
 [14:51:31]fs is required
 [14:51:31] ./script.js » Hello command line from new script
 [14:51:31] ./script.js » From application exported function
+[15:04:07]fs is required
+[15:04:07] ./script.js » Hello command line from new script
+[15:04:07] ./script.js » From application exported function
+[15:06:13]fs is required
+[15:06:13] ./script.js » Hello command line from new script
+[15:06:13] ./script.js » From application exported function

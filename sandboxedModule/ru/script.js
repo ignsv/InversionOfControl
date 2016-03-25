@@ -3,6 +3,8 @@ var Module= require('fs');
 
 console.log('Hello command line from new script');
 
+
+
 //task7
 module.exports = {
     firstFunction: function () {

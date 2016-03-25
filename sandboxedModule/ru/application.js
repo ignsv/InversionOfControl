@@ -8,6 +8,13 @@ setTimeout( function() {console.log("Hello, guys. Usage setTimeout");}, 1000);
 //setInterval( function() {console.log("Task1. Usage setInterval");}, 1000);
 console.log(util.isString(''));
 console.log(util.isNull(null));
+
+console.log('Task 9: list fo everything from app global context');
+ for (var key in global) {
+     console.log(key + ' : ' + typeof global[key]);
+ }
+
+
 //task 7
 module.exports = {
     firstFunction: function () {

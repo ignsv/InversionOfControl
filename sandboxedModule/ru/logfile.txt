@@ -51,3 +51,53 @@
 [15:06:13]fs is required
 [15:06:13] ./script.js » Hello command line from new script
 [15:06:13] ./script.js » From application exported function
+[15:12:09]fs is required
+[15:12:09] ./script.js » Hello command line from new script
+[15:12:09] ./script.js » Task 9: list fo everything from app global context
+[15:12:09] ./script.js » Module : object
+[15:12:09] ./script.js » key : string
+[15:12:09] ./script.js » module : object
+[15:12:09] ./script.js » console : object
+[15:12:09] ./script.js » setTimeout : function
+[15:12:09] ./script.js » setInterval : function
+[15:12:09] ./script.js » util : object
+[15:12:09] ./script.js » global : object
+[15:12:09] ./script.js » require : function
+[15:12:09] ./script.js » From application exported function
+[15:13:14]util is required
+[15:13:14] ./application.js » From application global context
+[15:13:14] ./application.js » true
+[15:13:14] ./application.js » true
+[15:13:14] ./application.js » From application exported function
+[15:13:15] ./application.js » Hello, guys. Usage setTimeout
+[15:13:59]util is required
+[15:13:59] ./application.js » From application global context
+[15:13:59] ./application.js » true
+[15:13:59] ./application.js » true
+[15:13:59] ./application.js » Task 9: list fo everything from app global context
+[15:13:59] ./application.js » module : object
+[15:13:59] ./application.js » key : string
+[15:13:59] ./application.js » console : object
+[15:13:59] ./application.js » setTimeout : function
+[15:13:59] ./application.js » setInterval : function
+[15:13:59] ./application.js » util : object
+[15:13:59] ./application.js » global : object
+[15:13:59] ./application.js » require : function
+[15:13:59] ./application.js » From application exported function
+[15:14:00] ./application.js » Hello, guys. Usage setTimeout
+[15:15:14]fs is required
+[15:15:14] ./script.js » Hello command line from new script
+[15:15:14] ./script.js » Task 9: list fo everything from app global context
+[15:15:14] ./script.js » Module : object
+[15:15:14] ./script.js » key : string
+[15:15:14] ./script.js » module : object
+[15:15:14] ./script.js » console : object
+[15:15:14] ./script.js » setTimeout : function
+[15:15:14] ./script.js » setInterval : function
+[15:15:14] ./script.js » util : object
+[15:15:14] ./script.js » global : object
+[15:15:14] ./script.js » require : function
+[15:15:14] ./script.js » From application exported function
+[15:15:25]fs is required
+[15:15:25] ./script.js » Hello command line from new script
+[15:15:25] ./script.js » From application exported function

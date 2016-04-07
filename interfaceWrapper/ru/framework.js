@@ -8,23 +8,9 @@ var context = {
   module: {},
   console: console,
   // Помещаем ссылку на fs API в песочницу
-  fs: fs,
+  fs: fs
   // Оборачиваем функцию setTimeout в песочнице
-  setTimeout: function(callback, timeout) {
-    // Добавляем поведение при вызове setTimeout
-    console.log(
-      'Call: setTimeout, ' +
-      'callback function: ' + callback.name + ', ' +
-      'timeout: ' + timeout
-    );
-    setTimeout(function() {
-      // Добавляем поведение при срабатывании таймера
-      console.log('Event: setTimeout, before callback');
-      // Вызываем функцию пользователя на событии таймера
-      callback();
-      console.log('Event: setTimeout, after callback');
-    }, timeout);
-  }
+ 
 };
 
 // Преобразовываем хеш в контекст

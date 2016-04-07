@@ -135,3 +135,37 @@
 [15:29:59] ./application.js » require : function
 [15:29:59] ./application.js » From application exported function
 [15:30:00] ./application.js » Hello, guys. Usage setTimeout
+[17:20:42]asq is required
+[17:21:45]asq is required
+[17:22:09]util is required
+[17:22:09] ./application.js » From application global context
+[17:22:09] ./application.js » true
+[17:22:09] ./application.js » true
+[17:22:09] ./application.js » Task 9: list fo everything from app global context
+[17:22:09] ./application.js » Module : object
+[17:22:09] ./application.js » key : string
+[17:22:09] ./application.js » module : object
+[17:22:09] ./application.js » console : object
+[17:22:09] ./application.js » setTimeout : function
+[17:22:09] ./application.js » setInterval : function
+[17:22:09] ./application.js » util : object
+[17:22:09] ./application.js » global : object
+[17:22:09] ./application.js » require : function
+[17:22:09] ./application.js » From application exported function
+[17:22:10] ./application.js » Hello, guys. Usage setTimeout
+[22:35:36]util is required
+[22:35:36] ./application.js » From application global context
+[22:35:36] ./application.js » true
+[22:35:36] ./application.js » true
+[22:35:36] ./application.js » Task 9: list fo everything from app global context
+[22:35:36] ./application.js » Module : object
+[22:35:36] ./application.js » key : string
+[22:35:36] ./application.js » module : object
+[22:35:36] ./application.js » console : object
+[22:35:36] ./application.js » setTimeout : function
+[22:35:36] ./application.js » setInterval : function
+[22:35:36] ./application.js » util : object
+[22:35:36] ./application.js » global : object
+[22:35:36] ./application.js » require : function
+[22:35:36] ./application.js » From application exported function
+[22:35:37] ./application.js » Hello, guys. Usage setTimeout

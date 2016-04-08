@@ -26,13 +26,6 @@ fs.readFile(fileName, function(err, src) {
 });
 
 
-function cloneInterface(anInterface) {
-  var clone = {};
-  for (var key in anInterface) {
-    clone[key] = anInterface[key];
-  }
-  return clone;
-}
 
 function wrapFunction(fnName, fn) {
   return function wrapper() {
@@ -40,6 +33,17 @@ function wrapFunction(fnName, fn) {
     Array.prototype.push.apply(args, arguments);
     console.log('Call: ' + fnName);
     console.dir(args);
+    if (typeof (args[args.length - 1]) === 'function') {
+      args[args.length - 1] = wrapFunction(args[args.length - 1].name, args[args.length - 1]);
+    }
     return fn.apply(undefined, args);
   }
+}
+
+function cloneInterface(anInterface) {
+  var clone = {};
+  for (var key in anInterface) {
+    clone[key] = wrapFunction(key,anInterface[key]);
+  }
+  return clone;
 }

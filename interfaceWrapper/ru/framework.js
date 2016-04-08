@@ -8,7 +8,7 @@ var context = {
   module: {},
   console: console,
   // Помещаем ссылку на fs API в песочницу
-  fs: cloneInterface(fs)
+  fs: cloneInterface(fs),
   // Оборачиваем функцию setTimeout в песочнице
  
 };

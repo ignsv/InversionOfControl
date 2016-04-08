@@ -16,3 +16,6 @@ fs.readFile(fileName, function(err, src) {
 
 // Устанавливаем функцию на таймер
 //setTimeout(timerEvent, 1000);
+fs.access(fileName, function (err) {
+    console.log('File ' + fileName + (err ? ' no access!' : ' can read/write'));
+})
